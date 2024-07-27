@@ -1,5 +1,7 @@
 import {
   createBrowserRouter,
+  Navigate,
+  Outlet,
   RouterProvider,
 } from "react-router-dom";
 
@@ -8,13 +10,54 @@ import Home from "./pages/home/home";
 import Login from "./pages/login/login";
 import Profile from "./pages/profile/profile";
 import Register from "./pages/register/register";
+import Navbar from "./components/navBar/navbar";
+import LeftBar from "./components/leftBar/leftbar";
+import RightBar from "./components/rightBar/rightBar";
 
 function App() {
+
+  const currentUser = true;
+
+  const ProtectedRoutes = ({children}) =>{
+    if(!currentUser){
+      return <Navigate to="/login"/>
+    }
+
+    return children;
+  }
+
+  function Layout(){
+
+    return(
+      <div>
+          <Navbar/>
+          <div style={{display:"flex"}}>
+            <LeftBar/>
+            <Outlet/>
+            <RightBar/>
+          </div>
+      </div>
+    )
+  }
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home/>
+      element: (
+        <ProtectedRoutes>
+          <Layout/>
+        </ProtectedRoutes>
+      ),
+      children:[
+        {
+          path: "/",
+          element: <Home/>
+        },
+        {
+          path: "/profile/:id",
+          element: <Profile/>
+        },
+      ]
     },
     {
       path: "/login",
@@ -23,10 +66,6 @@ function App() {
     {
       path: "/register",
       element: <Register/>
-    },
-    {
-      path: "/profile",
-      element: <Profile/>
     },
   ]);
 

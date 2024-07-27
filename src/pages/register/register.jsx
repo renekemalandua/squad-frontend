@@ -10,8 +10,8 @@ function Register() {
           <h1>Criar conta</h1>
           <form action="">
             <input type="text" placeholder="nome completo"/>
-            <input type="email" placeholder="insira o email"/>
-            <input type="password" placeholder="insira o palavra passe"/>
+            <input type="email" placeholder="email"/>
+            <input type="password" placeholder="palavra passe"/>
             <input type="password" placeholder="confirme a palavra passe"/>
             <button>Concluido</button>
           </form>
