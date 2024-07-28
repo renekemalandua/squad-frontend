@@ -12,11 +12,13 @@ import { NotificationsOutlined } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { DarkModeContext } from "../../context/darkModeContext";
+import { AuthContext } from "../../context/authUserContext";
 
 
 function Navbar() {
   
   const {toggle, darkMode} = useContext(DarkModeContext);
+  const {currentUser} = useContext(AuthContext);
 
   return (
     <div className="navBar">
@@ -42,8 +44,8 @@ function Navbar() {
           <NotificationsOutlined/>
 
           <div className="user">
-            <img src={DefaultAvatar} alt="" />
-            <span>John Doe</span>
+            <img src={currentUser.photo} alt="" />
+            <span>{currentUser.name}</span>
           </div>
       </div>
     </div>
