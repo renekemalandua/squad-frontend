@@ -13,6 +13,7 @@ import Register from "./pages/register/register";
 import Navbar from "./components/navBar/navbar";
 import LeftBar from "./components/leftBar/leftbar";
 import RightBar from "./components/rightBar/rightBar";
+import "./styles.scss"
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
   function Layout(){
 
     return(
-      <div className="">
+      <div className="theme-dark">
           <Navbar/>
           <div style={{display:"flex"}}>
             <LeftBar/>

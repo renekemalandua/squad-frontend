@@ -1,63 +1,67 @@
-.navBar{
+@import "../../styles.scss";
+
+.navBar {
+  @include themify($themes) {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
     height: 25px;
-    border-bottom: 1px solid lightgray;
-    position:sticky;
+    border-bottom: 1px solid themed("border");
+    position: sticky;
     top: 0;
-    background-color: white;
+    background-color: themed("bg");
+    color: themed("textColor");
 
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 30px;
 
+      span {
+        font-weight: bold;
+        font-size: 20px;
+        color: themed("logo");
+      }
 
-    .left{
+      .seacrh {
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 10px;
+        border-radius: 5px;
+        border: 1px solid themed("border");
+        padding: 5px;
 
-        span{
-            font-weight: bold;
-            font-size: 20px;
-            color: darkblue;
+        input {
+          border: none;
+          width: 500px;
+          outline: none;
+          background-color: themed("bg");
+          color: themed("textColor");
         }
-
-        .seacrh{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            border-radius: 5px;
-            border: 1px solid lightgray;
-            padding: 5px;
-
-            input{
-                border: none;
-                width: 500px;
-                outline: none;
-            }
-        }
+      }
     }
 
-    .right{
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .user {
         display: flex;
         align-items: center;
-        gap: 20px; 
+        gap: 10px;
+        font-weight: 500;
 
-        .user{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 500;
-
-            img{
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                object-fit: cover;
-            }
-            span{
-
-            }
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
         }
+        span {
+        }
+      }
     }
+  }
 }

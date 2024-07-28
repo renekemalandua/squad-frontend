@@ -47,7 +47,7 @@ function LeftBar() {
         </div>
         <hr/>
         <div className="menu">
-          <span>Your Shortcuts</span>
+          <span>Seus Atalhos</span>
           <div className="item">
               <img src={Events} alt="" />
               <span>Eventos</span>
