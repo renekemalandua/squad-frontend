@@ -1,26 +1,12 @@
+import Posts from "../../components/posts/posts";
+import Stories from "../../components/stories/stories";
 import "./home.scss"
 
 function Home() {
   return (
     <div className="home">
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1>
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1> 
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1> 
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1> 
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1> 
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1> 
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1> 
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1> 
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1> 
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1> 
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1> 
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1> 
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1> 
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1> 
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1> 
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1> 
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1> 
-      <h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1> 
+      <Stories/>
+      <Posts/>
     </div>
   )
 }
