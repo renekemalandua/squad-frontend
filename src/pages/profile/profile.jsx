@@ -26,22 +26,22 @@ function Profile() {
         />
       </div>
       <div className="profileContainer">
-        <div className="userInfo">
+        <div className="userInfor">
           <div className="left">
             <a href="http://facebook.com">
-              <FacebookTwoTone fontSize="large"/>
+              <FacebookTwoTone />
             </a>
             <a href="http://facebook.com">
-              <LinkedIn fontSize="large"/>
+              <LinkedIn />
             </a>
             <a href="http://facebook.com">
-              <Instagram fontSize="large"/>
+              <Instagram />
             </a>
             <a href="http://facebook.com">
-              <Pinterest fontSize="large"/>
+              <Pinterest />
             </a>
             <a href="http://facebook.com">
-              <Twitter fontSize="large"/>
+              <Twitter />
             </a>
           </div>
           <div className="center">
@@ -49,11 +49,11 @@ function Profile() {
             <div className ="info">
             <div className="item">
                 <Place/>
-                <span>Angola</span>
+                <span>AO</span>
             </div>
             <div className="item">
                 <Language/>
-                <span>kemalandua.dev</span>
+                <span>kemalandua</span>
             </div>
             </div>
             <button>Seguir</button>
